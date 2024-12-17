@@ -1,0 +1,15 @@
+{
+  "name": "superbdc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass --no-source-map styles/scss/index.scss styles/css/index.css",
+    "watch:css": "sass --watch --no-source-map styles/scss/index.scss:styles/css/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.82.0"
+  }
+}

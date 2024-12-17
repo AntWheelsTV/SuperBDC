@@ -1,363 +1,1332 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Your site's title should be here</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Your site's description should be here">
-    <meta name="keywords" content="Your site's keywords should be here">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="style.css"> 
-    <!--[if IE 6]>
-	<style type="text/css">
-		* html .group {
-			height: 1%;
-		}
-	</style>
-  <![endif]--> 
-    <!--[if IE 7]>
-	<style type="text/css">
-		*:first-child+html .group {
-			min-height: 1px;
-		}
-	</style>
-  <![endif]--> 
-    <!--[if lt IE 9]> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
-  <![endif]--> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=devanagari,latin,latin-ext">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/match-height.js"></script> 
-    <script>
-		$(function () {
-			$('.match-height-bootstrap-row > * > *').matchHeight();
-			$('.match-height > *').matchHeight();
-		})
-	</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperBDC | powered bu WheelsTV</title>
+    <meta
+      name="description"
+      content="Stop Grinding Your Leads, Start Mining Them."
+    />
+    <meta
+      name="keywords"
+      content="video, leads, conversion, automotive, dealerships, bdc, sales, marketing"
+    />
+    <link rel="stylesheet" href="styles/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=devanagari,latin,latin-ext"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="global_container_">
-      <header class="group-2">
-        <div class="row-2 group">
-          <img class="logo" src="images/logo.png" alt="" width="146" height="33">
-          <div class="sign-in">
-            Book a Demo
+    <header>
+      <div class="container header-wrapper">
+        <a
+          href="/"
+          class="header-logo"
+          aria-label="SuperBDC"
+          data-aos="fade-right"
+        >
+          <img src="/assets/logos/superbdc.png" alt="SuperBDC Logo" />
+        </a>
+        <input type="checkbox" id="hamburger" class="hamburger-input" />
+        <label class="hamburger-label" for="hamburger">
+          <span></span>
+        </label>
+        <nav >
+          <a href="#features" class="nav-item active">How It Works</a>
+          <a href="#pricing" class="nav-item">Pricing</a>
+          <a href="#faqs" class="nav-item">FAQs</a>
+          <a href="tel:978-264-4333" class="nav-phone">
+            <svg
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m19.23 15.26-2.54-.29c-.61-.07-1.21.14-1.64.57l-1.84 1.84c-2.83-1.44-5.15-3.75-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52c-.12-1.01-.97-1.77-1.99-1.77h-1.73c-1.13 0-2.07.94-2 2.07.53 8.54 7.36 15.36 15.89 15.89 1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98z"
+              />
+            </svg>
+            <span>(978) 264-4333</span>
+          </a>
+          <button onclick="openDialog()" class="nav-cta">Book a Demo</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="section-headline">
+            <p class="hero-eyebrow" data-aos="fade-down">
+              Gain Access to 7,300 Year/Make/Model Video Test Drives
+            </p>
+            <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="100">
+              Stop Grinding Your Leads,
+              <span class="text-primary">Start Mining Them.</span>
+            </h1>
+            <div
+              class="hero-description"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <p>
+                Your dealership is spending thousands of dollars on leads from
+                CarGurus, AutoTrader, Cars.com, and your website, but static
+                emails get ignored, follow-ups fall flat, and leads go cold.
+              </p>
+              <p>
+                Your shoppers expect more. But without access to video at scale,
+                your BDC team is left to send the same old emails and texts,
+                hoping something sticks.
+              </p>
+            </div>
           </div>
-          <p class="faqs">FAQs</p>
-          <p class="pricing">Pricing</p>
-          <p class="text">How It Works</p>
-        </div>
-        <div class="line-1"></div>
-        <div class="gain-access">
-          <div class="sign-in-box-outline-holder">
-            Gain Access to 7,300 Year/Make/Model Video Test Drives
+          <div class="hero-video" data-aos="zoom-in">
+            <div
+              style="
+                position: relative;
+                display: block;
+                max-width: 960px;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                margin: 0 auto;
+              "
+            >
+              <div style="padding-top: 56.25%">
+                <iframe
+                  src="https://players.brightcove.net/607012070001/0tyDZuxe5E_default/index.html?videoId=6362265537112"
+                  allowfullscreen=""
+                  frameborder="0"
+                  allow="encrypted-media"
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="text-4">Stop Grinding Your Leads,<br><span class="coloreb2127">Start Mining Them.</span></p>
-        <p class="text-5">Your dealership is spending thousands of dollars on leads from CarGurus, AutoTrader, Cars.com,<br>and your website, but static emails get ignored, follow-ups fall flat, and leads go cold.<br>Your shoppers expect more. But without access to video at scale, your BDC team is left<br>to send the same old emails and texts, hoping something sticks.</p>
-        <div class="line-2"></div>
-        <img class="rectangle-7" src="images/rectangle_7.png" alt="" width="688" height="387">
-      </header>
-      <div class="main-content-wrapper">
-        <div class="group-3">
-          <div class="l-constrained-4">
-            <p class="text-6">The Daily Grind to Nurture Leads<br><em class="text-style">We Feel Your Pain</em></p>
-            <p class="text-7">With each follow-up using a similar type of content, you're not engaging<br>or adding value—you’re frustrating them. You can almost hear<br>your prospects say: "You’re Killing Me, Smalls!"</p>
-            <div class="row-15 group">
-              <img class="rectangle-1" src="images/rectangle_1.jpg" alt="" width="479" height="533">
-              <div class="wrapper-17">
-                <div class="pattern-holder">
-                  <div class="frustated">
-                    <div class="icon_4-copy-holder">
-                      <img class="brain-doubt-copy" src="images/brain-doubt_copy.png" alt="" width="28" height="28">
+      </section>
+
+      <!-- Features Section -->
+      <section id="features">
+        <img
+          src="/assets/images/pattern.png"
+          loading="lazy"
+          class="features-pattern"
+          alt="pattern"
+        />
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading" data-aos="fade-up">
+              <b>The Daily Grind to Nurture Leads</b> <br />
+              <i>We Feel Your Pain</i>
+            </h2>
+            <p
+              class="section-paragraph"
+              data-aos="fade-in"
+              data-aos-delay="200"
+            >
+              With each follow-up using a similar type of content, you're not
+              engaging or adding value—you’re frustrating them. You can almost
+              hear your prospects say: "You’re Killing Me, Smalls!"
+            </p>
+          </div>
+          <div class="features-body">
+            <div
+              class="features-body__left"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img
+                src="/assets/images/daily-grind.png"
+                loading="lazy"
+                alt="Daily Grind"
+              />
+            </div>
+            <div class="features-body__right">
+              <div class="grid-features">
+                <div
+                  class="feature-item active"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                >
+                  <div class="feature-item__icon">
+                    <img
+                      src="/assets/icons/calendar-clock.png"
+                      loading="lazy"
+                      alt="calendar clock"
+                    />
+                  </div>
+                  <div class="feature-item__content">
+                    <p>
+                      <b>Prospects don’t respond</b> to static emails and text
+                      messages.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="feature-item"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="feature-item__icon">
+                    <img
+                      src="/assets/icons/user-hard-work.png"
+                      loading="lazy"
+                      alt="user-hard-work"
+                    />
+                  </div>
+                  <div class="feature-item__content">
+                    <p>
+                      <b>Your team struggles </b>to grab attention with
+                      follow-ups.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="feature-item"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="feature-item__icon">
+                    <img
+                      src="/assets/icons/person-circle-question.png"
+                      loading="lazy"
+                      alt="person-circle-question"
+                    />
+                  </div>
+                  <div class="feature-item__content">
+                    <p>
+                      <b>Leads grow colder </b>with every generic touchpoint.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="feature-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="feature-item__icon">
+                    <img
+                      src="/assets/icons/brain-doubt.png"
+                      loading="lazy"
+                      alt="brain-doubt"
+                    />
+                  </div>
+                  <div class="feature-item__content">
+                    <p>
+                      It’s frustrating, time- consuming, and—worst of all
+                      <b>— it costs you sales.</b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution Section -->
+      <section id="solutions">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading" data-aos="fade-up">
+              The Better Way: <br />
+              From Grinding to Mining Leads
+            </h2>
+            <p
+              class="section-paragraph"
+              data-aos="fade-in"
+              data-aos-delay="200"
+            >
+              What if every follow-up could be as exciting as a test drive? With
+              <supper>Super</supper><bdc>BDC</bdc>, it can be:
+            </p>
+          </div>
+          <h3 class="section-title" data-aos="fade-in" data-aos-delay="200">
+            Your Magic Video Toolbox Includes:
+          </h3>
+          <div class="grid-solutions">
+            <div data-aos="fade-up" data-aos-delay="50">
+              <div class="solution-item active">
+                <div class="solution-item__index">1</div>
+                <div class="solution-item__content">
+                  <h4 class="solution-item__title">
+                    7,300 Professional Year/Make/Model Test Drive Videos
+                  </h4>
+                  <p class="solution-item__description">
+                    (Yes, that's our actual number of model videos!)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <div class="solution-item">
+                <div class="solution-item__index">2</div>
+                <div class="solution-item__content">
+                  <h4 class="solution-item__title">Multi-channel Ready</h4>
+                  <p class="solution-item__description">
+                    (Email, text, social - wherever your customers are)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="150">
+              <div class="solution-item">
+                <div class="solution-item__index">3</div>
+                <div class="solution-item__content">
+                  <h4 class="solution-item__title">
+                    Instant CRM Integration (Drag, drop, done!)
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+              <div class="solution-item">
+                <div class="solution-item__index">4</div>
+                <div class="solution-item__content">
+                  <h4 class="solution-item__title">
+                    Coverage from 2008 to Present
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Channel Section -->
+      <section id="channels">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading large" data-aos="fade-up">
+              <span class="text-primary small">
+                Transform Every Channel into a
+              </span>
+              <br />Video Lead-Converting Machine
+            </h2>
+          </div>
+          <div class="section-body">
+            <div class="grid-split-text">
+              <div class="split-text">
+                <h3 class="split-text__title" data-aos="fade-down">
+                  Email Marketing Magic
+                </h3>
+                <div class="split-text__list">
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                  >
+                    <h4 class="split-text__item--label">The Pain</h4>
+                    <div class="split-text__item--content">
+                      Emails stuffed with repetitive, text-heavy content fail to
+                      grab attention. Leads tune out, and your hard work goes
+                      unnoticed.
                     </div>
-                    <p class="text-8">It’s frustrating, time- consuming, and—worst of<br>all — <strong class="fw700">it costs you sales</strong>.</p>
                   </div>
-                </div>
-                <div class="icon_3-copy-holder">
-                  <img class="person-circle-question-copy" src="images/person-circle-question_co.png" alt="" width="26" height="28">
-                </div>
-                <p class="text-9"><strong class="fw700">Leads grow colder </strong><br>with every generic touchpoint.</p>
-                <div class="icon_1-copy-holder">
-                  <img class="calendar-clock-copy" src="images/calendar-clock_copy.png" alt="" width="24" height="24">
-                </div>
-                <p class="text-10"><strong class="fw700">Prospects don’t respond</strong><br>to static emails and<br>text messages.</p>
-                <div class="lines">
-                  <div class="line-3-copy-2"></div>
-                  <div class="content">
-                    <div class="icon_2-copy-holder">
-                      <img class="user-hard-work-copy" src="images/user-hard-work_copy.png" alt="" width="26" height="26">
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                  >
+                    <h4 class="split-text__item--label">The Solution</h4>
+                    <div class="split-text__item--content">
+                      Add dynamic, engaging video test drives to your email
+                      campaigns. Show off the vehicles your leads care
+                      about-even those still in transit.
                     </div>
-                    <p class="text-11"><strong class="fw700">Your team struggles </strong><br>to grab attention with follow-ups.</p>
                   </div>
-                  <div class="line-3-copy"></div>
-                  <div class="line-3-copy-3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="l-unconstrained">
-          <div class="l-constrained">
-            <div class="group-4">
-              <p class="text-12">The Better Way:<br>From Grinding to Mining Leads</p>
-              <p class="text-13">What if every follow-up could be as exciting as a test drive?<br>With <strong class="text-style-2">Super</strong><strong class="text-style-3">BDC</strong>, it can be:</p>
-              <p class="text-14">Your Magic Video Toolbox Includes:</p>
-              <div class="group-1 match-height group">
-                <div class="col-8">
-                  <div class="coloumn-1-holder group">
-                    <p class="text-15">1</p>
-                    <p class="text-16">7,300 Professional Year/Make/Model Test Drive Videos<br><span class="text-style-4">&nbsp;</span><br><span class="text-style-5">(Yes, that's our actual number of model videos!)</span></p>
-                  </div>
-                  <div class="coloumn-1-copy-holder group">
-                    <p class="text-17">2</p>
-                    <p class="text-18">Instant CRM Integration (Drag, drop, done!)</p>
-                  </div>
-                </div>
-                <div class="col-9 group">
-                  <div class="coloumn-1-copy-3-holder group">
-                    <p class="text-19">3</p>
-                    <p class="text-20"><strong class="text-style-6">Multi-channel Ready</strong><br><span class="text-style-4">&nbsp;</span><br>(Email, text, social - wherever your customers are)</p>
-                  </div>
-                  <div class="coloumn-1-copy-2-holder group">
-                    <p class="text-21">4</p>
-                    <p class="text-22">Coverage from 2008<br>to Present</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="group-5 group">
-              <p class="text-23">Transform Every Channel into a</p>
-              <p class="text-24">Video Lead-Converting Machine</p>
-              <div class="row-20 group">
-                <div class="col-19">
-                  <p class="text-25">Email Marketing Magic</p>
-                  <p class="text-26"><strong class="text-style-7">The Pain</strong><br><span class="text-style-8">Emails stuffed with repetitive, text-heavy </span><span class="text-style-9">content fail to grab attention. Leads tune out, and your hard work goes unnoticed.</span><br><span class="text-style-10">&nbsp;</span><br><strong class="text-style-7">The Solution</strong><br><span class="text-style-8">Add dynamic, engaging video test drives to </span><span class="text-style-9">your email campaigns. Show off the vehicles your leads care about—even those still in transit.</span><br><span class="text-style-10">&nbsp;</span><br><strong class="text-style-7">The Result</strong><br><span class="text-style-8">Emails with video content see up to 30% </span><span class="text-style-9">higher open rates.</span><br><span class="text-style-11">Click-through rates improve by 25%, </span><span class="text-style-9">keeping leads informed and interested.</span></p>
-                </div>
-                <div class="rectangle-2-holder">
-                  <div class="layer-1-holder">
-                    <img class="rectangle-3" src="images/rectangle_3.png" alt="" width="343" height="180">
-                  </div>
-                </div>
-              </div>
-              <div class="row-16 group">
-                <div class="wrapper-19">
-                  <div class="rectangle-2-copy"></div>
-                  <img class="layer-2" src="images/layer_2.png" alt="" width="489" height="475">
-                </div>
-                <div class="col-15">
-                  <p class="text-27">Text Message Transformation</p>
-                  <p class="text-28"><strong class="text-style-7">The Pain</strong><br><span class="text-style-8">Plain texts and static photos are easily </span><span class="text-style-9">ignored. Leads don’t engage, and opportunities slip away.</span><br><span class="text-style-10">&nbsp;</span><br><strong class="text-style-7">The Solution</strong><br><span class="text-style-8">Send quick, eye-catching video links that </span><span class="text-style-9">highlight vehicle features and performance. These videos bring your messages to life and grab attention fast.</span><br><span class="text-style-10">&nbsp;</span><br><strong class="text-style-7">The Result</strong><br><span class="text-style-12">Texts with video links see </span><strong class="text-style-13">51% higher </strong><strong class="text-style-14">engagement rates</strong><span class="text-style-9">.</span><br><span class="text-style-11">Text campaigns achieve an average </span><span class="text-style-9">response rate of </span><strong class="text-style-14">45%</strong><span class="text-style-9">, crushing email's 6%.</span></p>
-                </div>
-              </div>
-              <div class="row-17 group">
-                <div class="col-16">
-                  <p class="text-29">Social Media Sorcery</p>
-                  <p class="text-30"><strong class="text-style-7">The Pain</strong><br><span class="text-style-8">With so much noise on social platforms, </span><span class="text-style-9">your posts struggle to stand out. Engagement lags, and your content fades into the background.</span><br><span class="text-style-10">&nbsp;</span><br><strong class="text-style-7">The Solution</strong><br><span class="text-style-8">Share scroll-stopping model video test </span><span class="text-style-9">drives that showcase cars in motion. These videos cut through the clutter and connect with your audience.</span><br><span class="text-style-10">&nbsp;</span><br><strong class="text-style-7">The Result</strong><br><span class="text-style-8">Video posts generate </span><strong class="text-style-15">2x the </strong><strong class="text-style-14">engagement</strong><span class="text-style-9"> of images.</span><br><span class="text-style-11">Social med</span><span class="text-style-9">ia videos lead to </span><strong class="text-style-14">1,200% more shares</strong><span class="text-style-9">.</span><br><span class="text-style-11">For </span><strong class="text-style-16">44% of users</strong><span class="text-style-11">, vi</span><span class="text-style-9">deo is the go-to format for discovering new products and services.</span></p>
-                </div>
-                <div class="hp">
-                  <div class="rectangle-2-copy-2"></div>
-                  <div class="layer-4-holder">
-                    <img class="rectangle-4" src="images/rectangle_4.jpg" alt="" width="212" height="214">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="group-6">
-          <div class="make-your-bdc">
-            <div class="l-constrained-5">
-              <p class="text-31">Make Your BDC Super-Powered</p>
-              <p class="text-32">From video-starved to video-fueled—let’s power up your BDC<br>with access to the world’s largest library of Year/Make/Model videos,<br>covering 2008 to today, from Acura to Volvo.</p>
-            </div>
-          </div>
-          <div class="wrapper-2">
-            <div class="col">
-              <div class="l-constrained-6">
-                <div class="line-3-copy-6"></div>
-                <div class="line-3-copy-5"></div>
-              </div>
-              <div class="how-the-mining-magic-happens">
-                <div class="l-unconstrained-3">
-                  <div class="l-constrained-7">
-                    <p class="text-33">How The Mining Magic Happens</p>
-                    <div class="col-2">
-                      <p class="text-34">Turn Leads into Golden Sales</p>
-                      <p class="text-35">Transform those warm leads into hot sales with consistent, added value follow-ups<br><span class="text-style-17">Keep the conversation flowing with fresh </span>content that actually informs and excites your prospects</p>
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-right"
+                    data-aos-delay="150"
+                  >
+                    <h4 class="split-text__item--label">The Result</h4>
+                    <div class="split-text__item--content">
+                      <ul>
+                        <li>
+                          Emails with video content see up to 30% higher open
+                          rates.
+                        </li>
+                        <li>
+                          Click-through rates improve by 25%, keeping leads
+                          informed and interested.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="wrapper-20">
-                  <p class="text-36">Strike Gold with Every Lead</p>
-                  <p class="text-37">Uncover the Perfect Video Gem</p>
-                  <p class="text-38">Share<br>the Sparkle</p>
-                  <div class="layer-8-holder">
-                    <img class="gold-ingots" src="images/gold-ingots.png" alt="" width="51" height="39">
+              </div>
+              <div class="split-image mail" data-aos="fade-left">
+                <div class="split-image__wrapper">
+                  <img
+                    src="/assets/images/channel-mail.png"
+                    loading="lazy"
+                    alt="channel mail"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="grid-split-text">
+              <div class="split-text">
+                <h3 class="split-text__title" data-aos="fade-down">
+                  Text Message Transformation
+                </h3>
+                <div class="split-text__list">
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                  >
+                    <h4 class="split-text__item--label">The Pain</h4>
+                    <div class="split-text__item--content">
+                      The Pain Plain texts and static photos are easily ignored.
+                      Leads don't engage, and opportunities slip away.
+                    </div>
+                  </div>
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                  >
+                    <h4 class="split-text__item--label">The Solution</h4>
+                    <div class="split-text__item--content">
+                      Send quick, eye-catching video links that highlight
+                      vehicle features and performance. These videos bring your
+                      messages to life and grab attention fast.
+                    </div>
+                  </div>
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-left"
+                    data-aos-delay="150"
+                  >
+                    <h4 class="split-text__item--label">The Result</h4>
+                    <div class="split-text__item--content">
+                      <ul>
+                        <li>
+                          Texts with video links see
+                          <b>51% higher engagement rates.</b>
+                        </li>
+                        <li>
+                          Text campaigns achieve an average response rate of
+                          45%, crushing email's 6%.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="empower">
-              <p class="text-39">Dealers and Partners Driving Sales<br>with SuperBDC</p>
-              <div class="empower-2">
-                <div class="row-12 group">
-                  <p class="text-40"><strong class="text-style-18">BDC Representatives</strong><br><span class="text-style-19">Turn leads into customers </span>with model video content that stands out.</p>
-                  <p class="text-41"><strong class="text-style-18">Internet Sales Managers</strong><br><span class="text-style-19">Make every click count and </span>drive shoppers to action.</p>
-                  <p class="text-42"><strong class="text-style-18">Sales</strong><br><strong class="text-style-18">Agents</strong><br><span class="text-style-19">Seal the deal with model </span>videos that excite and inform.</p>
-                </div>
-                <div class="row-13 group">
-                  <p class="text-43"><strong class="text-style-18">Marketing Managers</strong><br><span class="text-style-19">Supercharge email </span>campaigns with model videos that tell the whole story of your inventory.</p>
-                  <p class="text-44"><strong class="text-style-18">Social Media </strong><br><strong class="text-style-18">Teams</strong><br><span class="text-style-19">Create buzz and boost </span>traffic with share-worthy model video content.</p>
+              <div class="split-image message" data-aos="fade-right">
+                <div class="split-image__wrapper">
+                  <img
+                    src="/assets/images/channel-message.png"
+                    style="opacity: 0"
+                    loading="lazy"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div class="dealers-and-partners">
-              <div class="clients group">
-                <img class="coloumn-1-copy-4" src="images/coloumn_1_copy_4.png" alt="">
-                <img class="coloumn-1-copy-5" src="images/coloumn_1_copy_5.png" alt="">
-                <img class="coloumn-1-copy-6" src="images/coloumn_1_copy_6.png" alt="">
-                <img class="coloumn-1-copy-7" src="images/coloumn_1_copy_7.png" alt="">
-                <img class="coloumn-1-copy-8" src="images/coloumn_1_copy_8.png" alt="">
-                <img class="coloumn-1-copy-9" src="images/coloumn_1_copy_9.png" alt="">
+            <div class="grid-split-text">
+              <div class="split-text">
+                <h3 class="split-text__title" data-aos="fade-down">
+                  Social Media Sorcery
+                </h3>
+                <div class="split-text__list">
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                  >
+                    <h4 class="split-text__item--label">The Pain</h4>
+                    <div class="split-text__item--content">
+                      With so much noise on social platforms, your posts
+                      struggle to stand out. Engagement lags, and your content
+                      fades into the background.
+                    </div>
+                  </div>
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                  >
+                    <h4 class="split-text__item--label">The Solution</h4>
+                    <div class="split-text__item--content">
+                      Share scroll-stopping model video test drives that
+                      showcase cars in motion. These videos cut through the
+                      clutter and connect with your audience.
+                    </div>
+                  </div>
+                  <div
+                    class="split-text__item"
+                    data-aos="fade-right"
+                    data-aos-delay="150"
+                  >
+                    <h4 class="split-text__item--label">The Result</h4>
+                    <div class="split-text__item--content">
+                      <ul>
+                        <li>
+                          Video posts generate <b>2x the engagement</b> of
+                          images.
+                        </li>
+                        <li>
+                          Social media videos lead to <b>1,200% more shares.</b>
+                        </li>
+                        <li>
+                          For <b>44% of users</b>, video is the go-to format for
+                          discovering new products and services.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="text-45">Empower Your Entire Team<br>with Model Videos</p>
-              <p class="text-46">Give your teams the model video content they need<br>to crush every task and close every deal:</p>
+              <div class="split-image social" data-aos="fade-left">
+                <div class="split-image__wrapper">
+                  <img
+                    src="/assets/images/channel-social.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="l-unconstrained-2">
-          <div class="l-constrained-2">
-            <div class="group-7">
-              <div class="grey-box"></div>
-              <div class="white-box-holder">
-                <div class="content-2">
-                  <img class="quote" src="images/quote.png" alt="" width="32" height="23">
-                  <p class="text-47">"Each of our BDC Reps has created Year/Make/Model Video Templates<br>in our CRM, and attaching a WheelsTV video is very simple. We have seen<br>email open rates skyrocket—to the tune of 42% on 5th to 20th Day Emails,<br>with click-through rates averaging 32%."</p>
-                  <img class="rectangle-6" src="images/rectangle_6.png" alt="" width="96" height="96">
-                  <p class="text-48">Joel Davis</p>
-                  <p class="text-49">Internet Sales Manager, Matthews Auto Group</p>
-                  <img class="matthews_auto_group_cover-copy" src="images/matthews_auto_group_cover_2.png" alt="" width="141" height="24">
-                </div>
-              </div>
+      </section>
+
+      <!-- Make Your BDC Section -->
+      <section id="make-your-bdc">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading text-primary" data-aos="fade-up">
+              Make Your BDC Super-Powered
+            </h2>
+            <p
+              class="section-paragraph"
+              data-aos="fade-in"
+              data-aos-delay="200"
+            >
+              From video-starved to video-fueled—let’s power up your BDC with
+              access to the world’s largest library of Year/Make/Model videos,
+              covering 2008 to today, from Acura to Volvo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dealers and Partners Section -->
+      <section id="dealers-and-partners">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading" data-aos="fade-up">
+              Dealers and Partners Driving Sales with SuperBDC
+            </h2>
+          </div>
+          <div class="grid-partners">
+            <div data-aos="fade-up" data-aos-delay="50">
+              <a
+                href="https://www.quotible.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/quotible.svg"
+                  loading="lazy"
+                  alt="quotible logo"
+                />
+              </a>
             </div>
-            <div class="group-8 group">
-              <div class="pricing-2">
-                <p class="text-50"><span class="text-style-20">Pricing that</span><br>Pays for Itself</p>
-                <p class="text-51"><span class="text-style-21">$</span>99</p>
-                <p class="text-52">per month</p>
-                <div class="cta-schedule">
-                  <div class="schedule-box-copy-holder group">
-                    <img class="arrow-circle-right-copy-6" src="images/arrow-circle-right_copy_6.png" alt="" width="28" height="28">
-                    <p class="text-53">Schedule Your Demo Today</p>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <a
+                href="https://www.kellyauto.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/kelly-auto.png"
+                  loading="lazy"
+                  alt="kelly-auto logo"
+                />
+              </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="150">
+              <a
+                href="https://www.matthewsauto.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/matthews-auto.webp"
+                  loading="lazy"
+                  alt="matthews-auto logo"
+                />
+              </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+              <a
+                href="https://www.covideo.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/covideo-dealer.png"
+                  loading="lazy"
+                  alt="covideo-dealer logo"
+                />
+              </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="250">
+              <a
+                href="https://www.worldcar.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/world-car.png"
+                  loading="lazy"
+                  alt="world-car logo"
+                />
+              </a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <a
+                href="https://www.merchantsauto.cars"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/merchants-auto.png"
+                  loading="lazy"
+                  alt="merchants-auto logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Empower Your Entire Team Section -->
+      <section id="empower-your-entire-team">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading" data-aos="fade-up">
+              Empower Your Entire Team with Model Videos
+            </h2>
+            <p
+              class="section-paragraph"
+              data-aos="fade-in"
+              data-aos-delay="200"
+            >
+              Give your teams the model video content they need to crush every
+              task and close every deal:
+            </p>
+          </div>
+          <hr />
+          <div class="grid-teams">
+            <div class="team" data-aos="fade-up" data-aos-delay="50">
+              <h3 class="team-title">BDC Representatives</h3>
+              <p class="team-description">
+                Turn leads into customers with model video content that stands
+                out.
+              </p>
+            </div>
+            <div class="team" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="team-title">Internet Sales Managers</h3>
+              <p class="team-description">
+                Make every click count and drive shoppers to action.
+              </p>
+            </div>
+            <div class="team" data-aos="fade-up" data-aos-delay="150">
+              <h3 class="team-title">Sales Agents</h3>
+              <p class="team-description">
+                Seal the deal with model videos that excite and inform.
+              </p>
+            </div>
+            <div class="team" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="team-title">Marketing Managers</h3>
+              <p class="team-description">
+                Supercharge email campaigns with model videos that tell the
+                whole story of your inventory.
+              </p>
+            </div>
+            <div class="team" data-aos="fade-up" data-aos-delay="250">
+              <h3 class="team-title">Social Media Teams</h3>
+              <p class="team-description">
+                Create buzz and boost traffic with share-worthy model video
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mining Magic Section -->
+      <section id="mining-magic">
+        <div class="container">
+          <hr />
+          <div class="section-headline">
+            <h2 class="section-heading" data-aos="fade-up">
+              How The Mining Magic Happens
+            </h2>
+          </div>
+          <div class="mining-items">
+            <div
+              class="mining-item active"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="mining-item__bullet">
+                <div class="item-icon">
+                  <div class="item-icon__curve">
+                    <svg
+                      width="200"
+                      height="53"
+                      viewBox="0 0 200 53"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 52.489C13.0315 52.489 38.3878 46.3619 54.7325 26.0144C61.454 17.6468 72.7023 0.500025 100 0.500025C127.298 0.500025 138.546 17.6468 145.267 26.0144C161.612 46.3618 186.968 52.489 200 52.489"
+                        stroke="currentColor"
+                      />
+                    </svg>
                   </div>
-                  <p class="text-54">For less than one lead, transform follow-ups into conversions.<br>No contracts, no surprises—just results.<br><span class="text-style-9">&nbsp;</span><br><span class="text-style-22">Don’t lose another lead—make your BDC a SuperBDC</span></p>
+                  <div class="item-icon__inner">
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
                 </div>
+                <p class="mining-item__label">Strike Gold with Every Lead</p>
               </div>
-              <div class="line-4-copy"></div>
-              <div class="check-icon group">
-                <div class="col-10">
-                  <img class="check-mark-copy" src="images/check-mark_copy.png" alt="" width="15" height="15">
-                  <img class="check-mark-copy-3" src="images/check-mark_copy.png" alt="" width="15" height="15">
-                  <img class="check-mark-copy-4" src="images/check-mark_copy.png" alt="" width="15" height="15">
-                  <img class="check-mark-copy-6" src="images/check-mark_copy.png" alt="" width="15" height="15">
-                  <img class="check-mark-copy-7" src="images/check-mark_copy.png" alt="" width="15" height="15">
-                  <img class="check-mark-copy-2" src="images/check-mark_copy.png" alt="" width="15" height="15">
+              <div class="mining-item__overlay">
+                <h3 class="mining-item__title">Strike Gold with Every Lead</h3>
+                <div class="mining-item__description">
+                  <p>
+                    Timing is crucial when a lead comes in, and the right visual
+                    content keeps the momentum going.
+                  </p>
                 </div>
-                <p class="text-55"><strong class="text-style-23">High-Definition Full Motion </strong><br><strong class="text-style-23">Model Videos</strong><br>Bring vehicles to life for your leads, from sleek exteriors to standout features.<br><strong class="text-style-24">Comprehensive Coverage </strong><br><strong class="text-style-23">(MY 2008 to Present)</strong><br>Showcase new, used, and certified pre-owned cars with the confidence of OEM-approved content.<br><strong class="text-style-24">Custom-Built Video Landing Page</strong><br>A professional, branded video player built just for you—no YouTube distractions.<br><strong class="text-style-24">Regular Updates</strong><br>Stay ahead of the curve with fresh content added as new models hit the market.<br><strong class="text-style-24">Share Everywhere</strong><br>Effortlessly send video links through email, text, Facebook, Twitter, and your CRM.<br><strong class="text-style-24">Unlimited Access</strong><br>No limits, no restrictions—view, email, and share as much as you need.</p>
               </div>
             </div>
-            <div class="group-9 group">
-              <p class="faq">FAQ</p>
-              <div class="line-5-copy"></div>
-              <div class="row-7 group">
-                <p class="text-56">01</p>
-                <p class="text-57">How exactly does this help my team?</p>
-                <img class="arrow-circle-right-copy-7" src="images/arrow-circle-right_copy_7.png" alt="" width="28" height="28">
-              </div>
-              <div class="line-5"></div>
-              <div class="row-5 group">
-                <p class="text-58">02</p>
-                <p class="text-59">Is it complicated to use?</p>
-                <img class="arrow-circle-right-copy-8" src="images/arrow-circle-right_copy_7.png" alt="" width="28" height="28">
-              </div>
-              <div class="line-5-copy-2"></div>
-              <div class="row-3 group">
-                <p class="text-60">03</p>
-                <p class="text-61">What vehicles do you cover?</p>
-                <img class="arrow-circle-right-copy-9" src="images/arrow-circle-right_copy_9.png" alt="" width="28" height="28">
-              </div>
-              <p class="text-62">From Acura to Volvo, 2008 to present - if it's on the road, we probably have it. Perfect for new, used, and certified pre-owned vehicles.</p>
-              <div class="line-5-copy-3"></div>
-              <div class="row-9 group">
-                <p class="text-63">04</p>
-                <p class="text-64">How often do you add new content?</p>
-                <img class="arrow-circle-right-copy-10" src="images/arrow-circle-right_copy_7.png" alt="" width="28" height="28">
-              </div>
-              <div class="line-5-copy-5-holder">
-                <div class="line-5-copy-7"></div>
-              </div>
-              <div class="row-11 group">
-                <p class="text-65">05</p>
-                <p class="text-66">Is there a long-term contract?</p>
-                <img class="arrow-circle-right-copy-11" src="images/arrow-circle-right_copy_7.png" alt="" width="28" height="28">
-              </div>
-              <div class="line-5-copy-8"></div>
-              <p class="text-67">Ready to Stop Grinding and Start Mining?</p>
-              <div class="cta-schedule-copy">
-                <div class="schedule-box-copy-holder-2 group">
-                  <img class="arrow-circle-right-copy-6-2" src="images/arrow-circle-right_copy_6_2.png" alt="" width="28" height="28">
-                  <p class="text-68">Schedule Your Demo Now</p>
+            <div class="mining-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="mining-item__bullet">
+                <div class="item-icon">
+                  <div class="item-icon__curve">
+                    <svg
+                      width="200"
+                      height="53"
+                      viewBox="0 0 200 53"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 52.489C13.0315 52.489 38.3878 46.3619 54.7325 26.0144C61.454 17.6468 72.7023 0.500025 100 0.500025C127.298 0.500025 138.546 17.6468 145.267 26.0144C161.612 46.3618 186.968 52.489 200 52.489"
+                        stroke="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item-icon__inner">
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <p class="text-69">Your leads are waiting to be transformed into gold!</p>
+                <p class="mining-item__label">Uncover the Perfect Video Gem</p>
+              </div>
+              <div class="mining-item__overlay">
+                <h3 class="mining-item__title">
+                  Uncover the Perfect Video Gem
+                </h3>
+                <div class="mining-item__description">
+                  <ul>
+                    <li>
+                      Access our 7,300+ year/make/model video test drive
+                      treasure trove.
+                    </li>
+                    <li>
+                      No more scrambling for compelling visuals that move your
+                      lead to a purchase â€”every video you need is ready to
+                      impress your leads.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <div class="mining-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="mining-item__bullet">
+                <div class="item-icon">
+                  <div class="item-icon__curve">
+                    <svg
+                      width="200"
+                      height="53"
+                      viewBox="0 0 200 53"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 52.489C13.0315 52.489 38.3878 46.3619 54.7325 26.0144C61.454 17.6468 72.7023 0.500025 100 0.500025C127.298 0.500025 138.546 17.6468 145.267 26.0144C161.612 46.3618 186.968 52.489 200 52.489"
+                        stroke="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item-icon__inner">
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p class="mining-item__label">Share the Sparkle</p>
+              </div>
+              <div class="mining-item__overlay">
+                <h3 class="mining-item__title">Share the Sparkle</h3>
+                <div class="mining-item__description">
+                  <ul>
+                    <li>
+                      Easily share engaging year/make/model videos via email,
+                      text, or social media.
+                    </li>
+                    <li>
+                      Your follow-ups will shine with just a drag, drop, and a
+                      few clicks.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mining-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="mining-item__bullet">
+                <div class="item-icon">
+                  <div class="item-icon__curve">
+                    <svg
+                      width="200"
+                      height="53"
+                      viewBox="0 0 200 53"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 52.489C13.0315 52.489 38.3878 46.3619 54.7325 26.0144C61.454 17.6468 72.7023 0.500025 100 0.500025C127.298 0.500025 138.546 17.6468 145.267 26.0144C161.612 46.3618 186.968 52.489 200 52.489"
+                        stroke="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item-icon__inner">
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p class="mining-item__label">Turn Leads into Golden Sales</p>
+              </div>
+              <div class="mining-item__overlay">
+                <h3 class="mining-item__title">Turn Leads into Golden Sales</h3>
+                <div class="mining-item__description">
+                  <ul>
+                    <li>
+                      Keep your leads engaged with fresh, value-packed
+                      follow-ups.
+                    </li>
+                    <li>
+                      Transform interest into excitement and excitement into
+                      sales with model videos that inform and emotionally
+                      connect the lead to your inventory.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <div class="container">
+          <div class="testimonial">
+            <div class="testimonial-card">
+              <div class="testimonial-inner">
+                <div class="testimonial-icon">
+                  <img
+                    src="/assets/icons/quote.png"
+                    loading="lazy"
+                    alt="quote icon"
+                  />
+                </div>
+                <div class="testimonial-quote" data-aos="fade-up">
+                  "Each of our BDC Reps has created Year/Make/Model Video
+                  Templates in our CRM, and attaching a Wheels TV video is very
+                  simple. We have seen email open rates skyrocket-to the tune of
+                  42% on 5th to 20th Day Emails, with click-through rates
+                  averaging 32%."
+                </div>
+                <div class="testimonial-avatar" data-aos="zoom-in">
+                  <img
+                    src="/assets/images/Joel-Davis.png"
+                    loading="lazy"
+                    alt="Joel Davis"
+                  />
+                </div>
+                <div class="testimonial-name" data-aos="fade-up">
+                  Joel Davis
+                </div>
+                <div
+                  class="testimonial-title"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  Internet Sales Manager, Matthews Auto Group
+                </div>
+                <div
+                  class="testimonial-logo"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <img
+                    src="/assets/logos/matthews-auto.webp"
+                    loading="lazy"
+                    alt="matthews-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing">
+        <div class="container">
+          <div class="pricing-card">
+            <div class="pricing-details">
+              <h2 class="pricing-title" data-aos="fade-down">
+                Pricing that <br />
+                <b>Pays for Itself</b>
+              </h2>
+              <p class="pricing-price" data-aos="zoom-out">$<span>99</span></p>
+              <p class="pricing-period" data-aos="fade-in">per month</p>
+              <div
+                class="button-wrapper"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <button class="primary-button white" data-modal="demo-modal">
+                  <span>Schedule Your Demo Now</span>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <p class="pricing-note" data-aos="fade-up" data-aos-delay="100">
+                For less than one lead, transform follow-ups into conversions.
+                <br />
+                No contracts, no surprises—just results.
+              </p>
+              <p
+                class="pricing-subtext"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Don't lose another lead—make your BDC a SuperBDC
+              </p>
+            </div>
+            <div class="pricing-features">
+              <ul class="pricing-features-list" data-aos="fade-left">
+                <li>
+                  <p class="feature-title">
+                    High-Definition Full Motion Model Videos
+                  </p>
+                  <p class="feature-description">
+                    Bring vehicles to life for your leads, from sleek exteriors
+                    to standout features.
+                  </p>
+                </li>
+                <li>
+                  <p class="feature-title">
+                    Comprehensive Coverage (MY 2008 to Present)
+                  </p>
+                  <p class="feature-description">
+                    Showcase new, used, and certified pre-owned cars with the
+                    confidence of OEM-approved content.
+                  </p>
+                </li>
+                <li>
+                  <p class="feature-title">Custom-Built Video Landing Page</p>
+                  <p class="feature-description">
+                    A professional, branded video player built just for you-no
+                    puTube distractions.
+                  </p>
+                </li>
+                <li>
+                  <p class="feature-title">Regular Updates</p>
+                  <p class="feature-description">
+                    Stay ahead of the curve with fresh content added as new
+                    models hit the market.
+                  </p>
+                </li>
+                <li>
+                  <p class="feature-title">Share Everywhere</p>
+                  <p class="feature-description">
+                    Effortlessly send video links through email, text, Facebook,
+                    pitter, and your CRM.
+                  </p>
+                </li>
+                <li>
+                  <p class="feature-title">Unlimited Access</p>
+                  <p class="feature-description">
+                    No limits, no restrictions-view, email, and share as much as
+                    pu need.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faqs">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading large" data-aos="fade-up">FAQ</h2>
+          </div>
+          <div class="faqs">
+            <div class="faq-item active" data-aos="fade-up" data-aos-delay="50">
+              <div class="faq-index">01</div>
+              <div class="faq-body">
+                <h3 class="faq-question">
+                  How exactly does this help my team?
+                </h3>
+                <div class="faq-answer">
+                  <p>
+                    Imagine equipping your team with a treasure chest of over
+                    7,300 professional year/make/model video test drives. These
+                    videos are designed to engage customers emotionally while
+                    providing highly informative content. With SuperBDC, your
+                    team can instantly share these videos through any channel,
+                    making every follow-up stand out. Without this tool, you’re
+                    missing out on a powerful way to keep leads engaged and
+                    convert them into sales.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-icon">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 30C19.713 30 23.274 28.525 25.8995 25.8995C28.525 23.274 30 19.713 30 16C30 12.287 28.525 8.72601 25.8995 6.1005C23.274 3.475 19.713 2 16 2C12.287 2 8.72601 3.475 6.1005 6.1005C3.475 8.72601 2 12.287 2 16C2 19.713 3.475 23.274 6.1005 25.8995C8.72601 28.525 12.287 30 16 30ZM16 32C20.2435 32 24.3131 30.3143 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 20.2435 1.68571 24.3131 4.68629 27.3137C7.68687 30.3143 11.7565 32 16 32Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.0009 7.99902C15.7357 7.99902 15.4813 8.10438 15.2938 8.29192C15.1063 8.47945 15.0009 8.73381 15.0009 8.99902L15.0009 20.585L10.7089 16.291C10.6159 16.198 10.5055 16.1243 10.3841 16.074C10.2626 16.0237 10.1324 15.9978 10.0009 15.9978C9.86941 15.9978 9.73921 16.0237 9.61773 16.074C9.49625 16.1243 9.38587 16.198 9.29289 16.291C9.19992 16.384 9.12617 16.4944 9.07585 16.6159C9.02553 16.7373 8.99963 16.8675 8.99963 16.999C8.99963 17.1305 9.02553 17.2607 9.07585 17.3822C9.12617 17.5037 9.19992 17.614 9.29289 17.707L15.2929 23.707C15.3858 23.8001 15.4961 23.874 15.6176 23.9244C15.7391 23.9749 15.8694 24.0008 16.0009 24.0008C16.1324 24.0008 16.2627 23.9749 16.3842 23.9244C16.5057 23.874 16.616 23.8001 16.7089 23.707L22.7089 17.707C22.8019 17.614 22.8756 17.5037 22.9259 17.3822C22.9763 17.2607 23.0022 17.1305 23.0022 16.999C23.0022 16.8675 22.9763 16.7373 22.9259 16.6159C22.8756 16.4944 22.8019 16.384 22.7089 16.291C22.6159 16.198 22.5055 16.1243 22.3841 16.074C22.2626 16.0237 22.1324 15.9978 22.0009 15.9978C21.8694 15.9978 21.7392 16.0237 21.6177 16.074C21.4962 16.1243 21.3859 16.198 21.2929 16.291L17.0009 20.585L17.0009 8.99902C17.0009 8.73381 16.8955 8.47945 16.708 8.29192C16.5205 8.10438 16.2661 7.99902 16.0009 7.99902Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-index">02</div>
+              <div class="faq-body">
+                <h3 class="faq-question">
+                  How hard will it be for the BDC to use?
+                </h3>
+                <div class="faq-answer">
+                  <p>
+                    SuperBDC is incredibly easy to use—if you can drag and drop,
+                    you’re good to go! There’s no software to install. Simply
+                    log in, access share links, and start enhancing your
+                    follow-ups directly through your existing CRM. Teams without
+                    this simplicity might find themselves stuck in outdated,
+                    inefficient processes.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-icon">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 30C19.713 30 23.274 28.525 25.8995 25.8995C28.525 23.274 30 19.713 30 16C30 12.287 28.525 8.72601 25.8995 6.1005C23.274 3.475 19.713 2 16 2C12.287 2 8.72601 3.475 6.1005 6.1005C3.475 8.72601 2 12.287 2 16C2 19.713 3.475 23.274 6.1005 25.8995C8.72601 28.525 12.287 30 16 30ZM16 32C20.2435 32 24.3131 30.3143 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 20.2435 1.68571 24.3131 4.68629 27.3137C7.68687 30.3143 11.7565 32 16 32Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.0009 7.99902C15.7357 7.99902 15.4813 8.10438 15.2938 8.29192C15.1063 8.47945 15.0009 8.73381 15.0009 8.99902L15.0009 20.585L10.7089 16.291C10.6159 16.198 10.5055 16.1243 10.3841 16.074C10.2626 16.0237 10.1324 15.9978 10.0009 15.9978C9.86941 15.9978 9.73921 16.0237 9.61773 16.074C9.49625 16.1243 9.38587 16.198 9.29289 16.291C9.19992 16.384 9.12617 16.4944 9.07585 16.6159C9.02553 16.7373 8.99963 16.8675 8.99963 16.999C8.99963 17.1305 9.02553 17.2607 9.07585 17.3822C9.12617 17.5037 9.19992 17.614 9.29289 17.707L15.2929 23.707C15.3858 23.8001 15.4961 23.874 15.6176 23.9244C15.7391 23.9749 15.8694 24.0008 16.0009 24.0008C16.1324 24.0008 16.2627 23.9749 16.3842 23.9244C16.5057 23.874 16.616 23.8001 16.7089 23.707L22.7089 17.707C22.8019 17.614 22.8756 17.5037 22.9259 17.3822C22.9763 17.2607 23.0022 17.1305 23.0022 16.999C23.0022 16.8675 22.9763 16.7373 22.9259 16.6159C22.8756 16.4944 22.8019 16.384 22.7089 16.291C22.6159 16.198 22.5055 16.1243 22.3841 16.074C22.2626 16.0237 22.1324 15.9978 22.0009 15.9978C21.8694 15.9978 21.7392 16.0237 21.6177 16.074C21.4962 16.1243 21.3859 16.198 21.2929 16.291L17.0009 20.585L17.0009 8.99902C17.0009 8.73381 16.8955 8.47945 16.708 8.29192C16.5205 8.10438 16.2661 7.99902 16.0009 7.99902Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="faq-index">03</div>
+              <div class="faq-body">
+                <h3 class="faq-question">What vehicles do you cover?</h3>
+                <div class="faq-answer">
+                  <p>
+                    From Acura to Volvo, 2008 to present - if it’s on the road,
+                    we probably have it. Perfect for new, used, and certified
+                    pre-owned vehicles.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-icon">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 30C19.713 30 23.274 28.525 25.8995 25.8995C28.525 23.274 30 19.713 30 16C30 12.287 28.525 8.72601 25.8995 6.1005C23.274 3.475 19.713 2 16 2C12.287 2 8.72601 3.475 6.1005 6.1005C3.475 8.72601 2 12.287 2 16C2 19.713 3.475 23.274 6.1005 25.8995C8.72601 28.525 12.287 30 16 30ZM16 32C20.2435 32 24.3131 30.3143 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 20.2435 1.68571 24.3131 4.68629 27.3137C7.68687 30.3143 11.7565 32 16 32Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.0009 7.99902C15.7357 7.99902 15.4813 8.10438 15.2938 8.29192C15.1063 8.47945 15.0009 8.73381 15.0009 8.99902L15.0009 20.585L10.7089 16.291C10.6159 16.198 10.5055 16.1243 10.3841 16.074C10.2626 16.0237 10.1324 15.9978 10.0009 15.9978C9.86941 15.9978 9.73921 16.0237 9.61773 16.074C9.49625 16.1243 9.38587 16.198 9.29289 16.291C9.19992 16.384 9.12617 16.4944 9.07585 16.6159C9.02553 16.7373 8.99963 16.8675 8.99963 16.999C8.99963 17.1305 9.02553 17.2607 9.07585 17.3822C9.12617 17.5037 9.19992 17.614 9.29289 17.707L15.2929 23.707C15.3858 23.8001 15.4961 23.874 15.6176 23.9244C15.7391 23.9749 15.8694 24.0008 16.0009 24.0008C16.1324 24.0008 16.2627 23.9749 16.3842 23.9244C16.5057 23.874 16.616 23.8001 16.7089 23.707L22.7089 17.707C22.8019 17.614 22.8756 17.5037 22.9259 17.3822C22.9763 17.2607 23.0022 17.1305 23.0022 16.999C23.0022 16.8675 22.9763 16.7373 22.9259 16.6159C22.8756 16.4944 22.8019 16.384 22.7089 16.291C22.6159 16.198 22.5055 16.1243 22.3841 16.074C22.2626 16.0237 22.1324 15.9978 22.0009 15.9978C21.8694 15.9978 21.7392 16.0237 21.6177 16.074C21.4962 16.1243 21.3859 16.198 21.2929 16.291L17.0009 20.585L17.0009 8.99902C17.0009 8.73381 16.8955 8.47945 16.708 8.29192C16.5205 8.10438 16.2661 7.99902 16.0009 7.99902Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+              <div class="faq-index">04</div>
+              <div class="faq-body">
+                <h3 class="faq-question">How often do you add new content?</h3>
+                <div class="faq-answer">
+                  <p>
+                    We keep your model video library up to date with regular
+                    updates, including the latest models. New content is
+                    included automatically with your subscription. Without this
+                    continuous refresh, your outreach risks feeling stale
+                    compared to competitors using fresh content.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-icon">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 30C19.713 30 23.274 28.525 25.8995 25.8995C28.525 23.274 30 19.713 30 16C30 12.287 28.525 8.72601 25.8995 6.1005C23.274 3.475 19.713 2 16 2C12.287 2 8.72601 3.475 6.1005 6.1005C3.475 8.72601 2 12.287 2 16C2 19.713 3.475 23.274 6.1005 25.8995C8.72601 28.525 12.287 30 16 30ZM16 32C20.2435 32 24.3131 30.3143 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 20.2435 1.68571 24.3131 4.68629 27.3137C7.68687 30.3143 11.7565 32 16 32Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.0009 7.99902C15.7357 7.99902 15.4813 8.10438 15.2938 8.29192C15.1063 8.47945 15.0009 8.73381 15.0009 8.99902L15.0009 20.585L10.7089 16.291C10.6159 16.198 10.5055 16.1243 10.3841 16.074C10.2626 16.0237 10.1324 15.9978 10.0009 15.9978C9.86941 15.9978 9.73921 16.0237 9.61773 16.074C9.49625 16.1243 9.38587 16.198 9.29289 16.291C9.19992 16.384 9.12617 16.4944 9.07585 16.6159C9.02553 16.7373 8.99963 16.8675 8.99963 16.999C8.99963 17.1305 9.02553 17.2607 9.07585 17.3822C9.12617 17.5037 9.19992 17.614 9.29289 17.707L15.2929 23.707C15.3858 23.8001 15.4961 23.874 15.6176 23.9244C15.7391 23.9749 15.8694 24.0008 16.0009 24.0008C16.1324 24.0008 16.2627 23.9749 16.3842 23.9244C16.5057 23.874 16.616 23.8001 16.7089 23.707L22.7089 17.707C22.8019 17.614 22.8756 17.5037 22.9259 17.3822C22.9763 17.2607 23.0022 17.1305 23.0022 16.999C23.0022 16.8675 22.9763 16.7373 22.9259 16.6159C22.8756 16.4944 22.8019 16.384 22.7089 16.291C22.6159 16.198 22.5055 16.1243 22.3841 16.074C22.2626 16.0237 22.1324 15.9978 22.0009 15.9978C21.8694 15.9978 21.7392 16.0237 21.6177 16.074C21.4962 16.1243 21.3859 16.198 21.2929 16.291L17.0009 20.585L17.0009 8.99902C17.0009 8.73381 16.8955 8.47945 16.708 8.29192C16.5205 8.10438 16.2661 7.99902 16.0009 7.99902Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-index">05</div>
+              <div class="faq-body">
+                <h3 class="faq-question">Is there a long-term contract?</h3>
+                <div class="faq-answer">
+                  <p>
+                    Not at all! For just $99/month per store, you can cancel
+                    anytime with a 30-day notice. No hidden fees or complicated
+                    terms. Plus, anyone at the store—from sales to marketing to
+                    internet teams—can use the videos. Teams without this
+                    resource may be struggling to create engaging content and
+                    losing time and sales as a result.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-icon">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 30C19.713 30 23.274 28.525 25.8995 25.8995C28.525 23.274 30 19.713 30 16C30 12.287 28.525 8.72601 25.8995 6.1005C23.274 3.475 19.713 2 16 2C12.287 2 8.72601 3.475 6.1005 6.1005C3.475 8.72601 2 12.287 2 16C2 19.713 3.475 23.274 6.1005 25.8995C8.72601 28.525 12.287 30 16 30ZM16 32C20.2435 32 24.3131 30.3143 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 20.2435 1.68571 24.3131 4.68629 27.3137C7.68687 30.3143 11.7565 32 16 32Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.0009 7.99902C15.7357 7.99902 15.4813 8.10438 15.2938 8.29192C15.1063 8.47945 15.0009 8.73381 15.0009 8.99902L15.0009 20.585L10.7089 16.291C10.6159 16.198 10.5055 16.1243 10.3841 16.074C10.2626 16.0237 10.1324 15.9978 10.0009 15.9978C9.86941 15.9978 9.73921 16.0237 9.61773 16.074C9.49625 16.1243 9.38587 16.198 9.29289 16.291C9.19992 16.384 9.12617 16.4944 9.07585 16.6159C9.02553 16.7373 8.99963 16.8675 8.99963 16.999C8.99963 17.1305 9.02553 17.2607 9.07585 17.3822C9.12617 17.5037 9.19992 17.614 9.29289 17.707L15.2929 23.707C15.3858 23.8001 15.4961 23.874 15.6176 23.9244C15.7391 23.9749 15.8694 24.0008 16.0009 24.0008C16.1324 24.0008 16.2627 23.9749 16.3842 23.9244C16.5057 23.874 16.616 23.8001 16.7089 23.707L22.7089 17.707C22.8019 17.614 22.8756 17.5037 22.9259 17.3822C22.9763 17.2607 23.0022 17.1305 23.0022 16.999C23.0022 16.8675 22.9763 16.7373 22.9259 16.6159C22.8756 16.4944 22.8019 16.384 22.7089 16.291C22.6159 16.198 22.5055 16.1243 22.3841 16.074C22.2626 16.0237 22.1324 15.9978 22.0009 15.9978C21.8694 15.9978 21.7392 16.0237 21.6177 16.074C21.4962 16.1243 21.3859 16.198 21.2929 16.291L17.0009 20.585L17.0009 8.99902C17.0009 8.73381 16.8955 8.47945 16.708 8.29192C16.5205 8.10438 16.2661 7.99902 16.0009 7.99902Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule Your Demo Section -->
+      <div id="schedule-your-demo" class="">
+        <div class="container">
+          <div class="section-headline">
+            <h2 class="section-heading" data-aos="fade-up">
+              Ready to Stop Grinding and Start Mining?
+            </h2>
+            <div class="button-wrapper" data-aos="zoom-in" data-aos-delay="100">
+              <button class="primary-button" data-modal="demo-modal">
+                <span>Schedule Your Demo Now</span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p
+              class="section-paragraph small"
+              data-aos="fade-in"
+              data-aos-delay="200"
+            >
+              Your leads are waiting to be transformed into gold!
+            </p>
           </div>
         </div>
       </div>
-      <footer class="group-10">
-        <div class="l-constrained-3">
-          <div class="row-14 group">
-            <div class="col-21">
-              <div class="row-21 group">
-                <div class="col-22">
-                  <img class="logo-copy" src="images/logo_copy.png" alt="" width="119" height="27">
-                  <p class="navigation">Navigation</p>
-                </div>
-                <p class="text-70">Social Media</p>
-              </div>
-              <div class="row-22 match-height group">
-                <div class="col-23">
-                  <p class="text-71">How It Works</p>
-                  <p class="pricing-3">Pricing</p>
-                </div>
-                <div class="col-24">
-                  <p class="facebook">Facebook</p>
-                  <p class="linkedin">LinkedIn</p>
-                </div>
-              </div>
-              <p class="faqs-2">FAQs</p>
-              <p class="text-72">Book a Demo</p>
-            </div>
-            <div class="col-12">
-              <p class="text-73">Subscribe to Our Newsletter</p>
-              <p class="text-74">Let's Keep in Touch. Enter your email, and we'll reach out from time to time with helpful tidbits on how to unlock the full value of the SuperBDC Video Library.<br><span class="text-style-25">&nbsp;</span><br><span class="colorafafaf">Enter your email</span></p>
-              <div class="line-6"></div>
-              <div class="schedule-box-copy-2-holder">
-                SUBSCRIBE
-              </div>
-            </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="/">
+            <img
+              src="/assets/logos/superbdc-gray.png"
+              loading="lazy"
+              alt="SuperBDC Logo"
+            />
+          </a>
+        </div>
+        <div class="footer-content">
+          <div>
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-navigation">
+              <li><a class="footer-link" href="#features">How It Works</a></li>
+              <li><a class="footer-link" href="#pricings">Pricing</a></li>
+              <li><a class="footer-link" href="#faqs">FAQs</a></li>
+              <li>
+                <a class="footer-link" type="button" data-modal="demo-modal">
+                  Book a Demo
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="line-1-copy"></div>
-          <div class="row-19 group">
-            <p class="text-75">Terms &amp; Conditions</p>
-            <p class="text-76">Privacy Policy</p>
-            <p class="text-77">© 2024 SuperBDC</p>
+
+          <div>
+            <!-- <h3 class="footer-heading">Social Media</h3>
+            <ul class="footer-navigation">
+              <li><a class="footer-link" href="#">Facebook</a></li>
+              <li><a class="footer-link" href="#">LinkedIn</a></li>
+            </ul> -->
+          </div>
+
+          <div class="footer-newsletter">
+            <!-- <h3 class="footer-heading">Subscribe to Our Newsletter</h3>
+            <p class="footer-newsletter-paragraph">
+              Let’s Keep in Touch. Enter your email, and we’ll reach out from
+              time to time with helpful tidbits on how to unlock the full value
+              of the SuperBDC Video Library.
+            </p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">SUBSCRIBE</button>
+            </form> -->
           </div>
         </div>
-      </footer>
+
+        <div class="footer-bottom">
+          <!-- <div class="footer-legal">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div> -->
+          <p class="footer-copyright">© 2024 SuperBDC</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="demo-modal" class="modal">
+      <div class="modal-overlay" onclick="closeDialog()"></div>
+      <button
+        class="close-button"
+        aria-label="close modal"
+        onclick="closeDialog()"
+      >
+        &times;
+      </button>
+
+      <div class="modal-content">
+        <iframe
+          src="https://www.wheelstv.net/book-a-demo/?t=1"
+          allowfullscreen=""
+          frameborder="0"
+          style="width: 100%; height: 100%"
+        ></iframe>
+      </div>
     </div>
+
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
