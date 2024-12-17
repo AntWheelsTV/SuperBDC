@@ -32,9 +32,13 @@
           aria-label="SuperBDC"
           data-aos="fade-right"
         >
-          <img src="/assets/logos/superbdc.png" alt="SuperBDC" />
+          <img src="/assets/logos/superbdc.png" alt="SuperBDC Logo" />
         </a>
-        <nav data-aos="fade-left">
+        <input type="checkbox" id="hamburger" class="hamburger-input" />
+        <label class="hamburger-label" for="hamburger">
+          <span></span>
+        </label>
+        <nav >
           <a href="#features" class="nav-item active">How It Works</a>
           <a href="#pricing" class="nav-item">Pricing</a>
           <a href="#faqs" class="nav-item">FAQs</a>
@@ -54,22 +58,6 @@
           </a>
           <button onclick="openDialog()" class="nav-cta">Book a Demo</button>
         </nav>
-        <input type="checkbox" name="hamburger" class="hamburger-input" />
-        <label class="hamburger-label" for="hamburger">
-          <svg
-            fill="none"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g stroke="#000000" stroke-linecap="round" stroke-width="1.5">
-              <path d="m3 7h18" />
-              <path d="m3 12h18" />
-              <path d="m3 17h18" />
-            </g>
-          </svg>
-        </label>
       </div>
     </header>
 
@@ -138,6 +126,7 @@
       <section id="features">
         <img
           src="/assets/images/pattern.png"
+          loading="lazy"
           class="features-pattern"
           alt="pattern"
         />
@@ -163,7 +152,11 @@
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <img src="/assets/images/daily-grind.png" alt="Daily Grind" />
+              <img
+                src="/assets/images/daily-grind.png"
+                loading="lazy"
+                alt="Daily Grind"
+              />
             </div>
             <div class="features-body__right">
               <div class="grid-features">
@@ -175,6 +168,7 @@
                   <div class="feature-item__icon">
                     <img
                       src="/assets/icons/calendar-clock.png"
+                      loading="lazy"
                       alt="calendar clock"
                     />
                   </div>
@@ -191,7 +185,11 @@
                   data-aos-delay="100"
                 >
                   <div class="feature-item__icon">
-                    <img src="/assets/icons/user-hard-work.png" alt="" />
+                    <img
+                      src="/assets/icons/user-hard-work.png"
+                      loading="lazy"
+                      alt="user-hard-work"
+                    />
                   </div>
                   <div class="feature-item__content">
                     <p>
@@ -208,7 +206,8 @@
                   <div class="feature-item__icon">
                     <img
                       src="/assets/icons/person-circle-question.png"
-                      alt=""
+                      loading="lazy"
+                      alt="person-circle-question"
                     />
                   </div>
                   <div class="feature-item__content">
@@ -223,7 +222,11 @@
                   data-aos-delay="200"
                 >
                   <div class="feature-item__icon">
-                    <img src="/assets/icons/brain-doubt.png" alt="" />
+                    <img
+                      src="/assets/icons/brain-doubt.png"
+                      loading="lazy"
+                      alt="brain-doubt"
+                    />
                   </div>
                   <div class="feature-item__content">
                     <p>
@@ -374,6 +377,7 @@
                 <div class="split-image__wrapper">
                   <img
                     src="/assets/images/channel-mail.png"
+                    loading="lazy"
                     alt="channel mail"
                   />
                 </div>
@@ -434,6 +438,7 @@
                   <img
                     src="/assets/images/channel-message.png"
                     style="opacity: 0"
+                    loading="lazy"
                     alt=""
                   />
                 </div>
@@ -495,7 +500,11 @@
               </div>
               <div class="split-image social" data-aos="fade-left">
                 <div class="split-image__wrapper">
-                  <img src="/assets/images/channel-social.jpg" alt="" />
+                  <img
+                    src="/assets/images/channel-social.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -533,34 +542,68 @@
           </div>
           <div class="grid-partners">
             <div data-aos="fade-up" data-aos-delay="50">
-              <a href="#" class="partner">
-                <img src="/assets/logos/quotible.svg" alt="quotible logo" />
+              <a
+                href="https://www.quotible.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/quotible.svg"
+                  loading="lazy"
+                  alt="quotible logo"
+                />
               </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-              <a href="#" class="partner">
-                <img src="/assets/logos/kelly-auto.png" alt="kelly-auto logo" />
+              <a
+                href="https://www.kellyauto.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/kelly-auto.png"
+                  loading="lazy"
+                  alt="kelly-auto logo"
+                />
               </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="150">
-              <a href="#" class="partner">
+              <a
+                href="https://www.matthewsauto.com/"
+                target="_blank"
+                class="partner"
+              >
                 <img
                   src="/assets/logos/matthews-auto.webp"
+                  loading="lazy"
                   alt="matthews-auto logo"
                 />
               </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="200">
-              <a href="#" class="partner">
+              <a
+                href="https://www.covideo.com/"
+                target="_blank"
+                class="partner"
+              >
                 <img
                   src="/assets/logos/covideo-dealer.png"
+                  loading="lazy"
                   alt="covideo-dealer logo"
                 />
               </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="250">
-              <a href="#" class="partner">
-                <img src="/assets/logos/world-car.png" alt="world-car logo" />
+              <a
+                href="https://www.worldcar.com/"
+                target="_blank"
+                class="partner"
+              >
+                <img
+                  src="/assets/logos/world-car.png"
+                  loading="lazy"
+                  alt="world-car logo"
+                />
               </a>
             </div>
             <div data-aos="fade-up" data-aos-delay="300">
@@ -571,6 +614,7 @@
               >
                 <img
                   src="/assets/logos/merchants-auto.png"
+                  loading="lazy"
                   alt="merchants-auto logo"
                 />
               </a>
@@ -666,7 +710,11 @@
                     </svg>
                   </div>
                   <div class="item-icon__inner">
-                    <img src="/assets/icons/gold-ingots.svg" alt="" />
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="mining-item__label">Strike Gold with Every Lead</p>
@@ -699,7 +747,11 @@
                     </svg>
                   </div>
                   <div class="item-icon__inner">
-                    <img src="/assets/icons/gold-ingots.svg" alt="" />
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="mining-item__label">Uncover the Perfect Video Gem</p>
@@ -741,7 +793,11 @@
                     </svg>
                   </div>
                   <div class="item-icon__inner">
-                    <img src="/assets/icons/gold-ingots.svg" alt="" />
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="mining-item__label">Share the Sparkle</p>
@@ -780,7 +836,11 @@
                     </svg>
                   </div>
                   <div class="item-icon__inner">
-                    <img src="/assets/icons/gold-ingots.svg" alt="" />
+                    <img
+                      src="/assets/icons/gold-ingots.svg"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="mining-item__label">Turn Leads into Golden Sales</p>
@@ -813,7 +873,11 @@
             <div class="testimonial-card">
               <div class="testimonial-inner">
                 <div class="testimonial-icon">
-                  <img src="/assets/icons/quote.png" alt="quote icon" />
+                  <img
+                    src="/assets/icons/quote.png"
+                    loading="lazy"
+                    alt="quote icon"
+                  />
                 </div>
                 <div class="testimonial-quote" data-aos="fade-up">
                   "Each of our BDC Reps has created Year/Make/Model Video
@@ -823,7 +887,11 @@
                   averaging 32%."
                 </div>
                 <div class="testimonial-avatar" data-aos="zoom-in">
-                  <img src="/assets/images/Joel-Davis.png" alt="" />
+                  <img
+                    src="/assets/images/Joel-Davis.png"
+                    loading="lazy"
+                    alt="Joel Davis"
+                  />
                 </div>
                 <div class="testimonial-name" data-aos="fade-up">
                   Joel Davis
@@ -840,7 +908,11 @@
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  <img src="/assets/logos/matthews-auto.webp" alt="" />
+                  <img
+                    src="/assets/logos/matthews-auto.webp"
+                    loading="lazy"
+                    alt="matthews-auto"
+                  />
                 </div>
               </div>
             </div>
@@ -1179,7 +1251,11 @@
       <div class="container">
         <div class="footer-logo">
           <a href="/">
-            <img src="/assets/logos/superbdc-gray.png" alt="SuperBDC" />
+            <img
+              src="/assets/logos/superbdc-gray.png"
+              loading="lazy"
+              alt="SuperBDC Logo"
+            />
           </a>
         </div>
         <div class="footer-content">
@@ -1190,7 +1266,9 @@
               <li><a class="footer-link" href="#pricings">Pricing</a></li>
               <li><a class="footer-link" href="#faqs">FAQs</a></li>
               <li>
-                <a class="footer-link" data-modal="demo-modal">Book a Demo</a>
+                <a class="footer-link" type="button" data-modal="demo-modal">
+                  Book a Demo
+                </a>
               </li>
             </ul>
           </div>
