@@ -152,7 +152,7 @@
           <div class="features-body">
             <div
               class="features-body__left"
-              data-aos="fade-right"
+              data-aos="zoom-in"
               data-aos-delay="100"
             >
               <img
@@ -378,11 +378,13 @@
               </div>
               <div class="split-image mail" data-aos="fade-left">
                 <div class="split-image__wrapper">
-                  <img
-                    src="/assets/images/channel-mail.png"
-                    loading="lazy"
-                    alt="channel mail"
-                  />
+                  <video
+                    src="/assets/videos/Video-Test-Drive-Email.mp4"
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                  ></video>
                 </div>
               </div>
             </div>
@@ -438,12 +440,18 @@
               </div>
               <div class="split-image message" data-aos="fade-right">
                 <div class="split-image__wrapper">
-                  <img
-                    src="/assets/images/channel-message.png"
-                    style="opacity: 0"
-                    loading="lazy"
-                    alt=""
-                  />
+                  <video
+                    src="/assets/videos/Video-Test-Drive-Text.mp4"
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                  ></video>
+                  <!-- <img
+                    src="/assets/images/channel-message-floating.png"
+                    alt="message floating"
+                    class="message-floating"
+                  /> -->
                 </div>
               </div>
             </div>
@@ -503,11 +511,13 @@
               </div>
               <div class="split-image social" data-aos="fade-left">
                 <div class="split-image__wrapper">
-                  <img
-                    src="/assets/images/channel-social.jpg"
-                    loading="lazy"
-                    alt=""
-                  />
+                  <video
+                    src="/assets/videos/Video-Test-Drive-Facebook.mp4"
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                  ></video>
                 </div>
               </div>
             </div>
@@ -1310,13 +1320,144 @@
 
     <!-- The Modal -->
     <div id="demo-modal" class="modal">
-      <div class="modal-overlay" onclick="closeDialog()"></div>
+      <div class="modal-overlay" onclick="closeDemoModal('demo-modal')"></div>
       <button
         class="close-button"
         aria-label="close modal"
-        onclick="closeDialog()"
+        onclick="closeDemoModal('demo-modal')"
       >
-        &times;
+        <svg
+          fill="none"
+          height="28"
+          width="28"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m5 5 14 14m-14 0 14-14"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+
+      <div class="modal-content">
+        <div class="book-demo-form">
+          <div class="form-header">
+            <h3>Book a Demo</h3>
+            <p>
+              Drive sales with on-the-road video for every car on your lot
+              without picking up a camera.
+            </p>
+          </div>
+          <form class="form-body">
+            <div class="form-heading">
+              <h4>Contact Us</h4>
+            </div>
+            <div class="form-elements">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  class="form-field"
+                  name="first-name"
+                  required
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  class="form-field"
+                  name="last-name"
+                  required
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email"
+                  >Email <span class="required">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="form-field"
+                  name="email"
+                  required
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-field"
+                  name="phone"
+                  placeholder="Your direct line"
+                />
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="dealership">
+                  Dealership <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-field"
+                  id="dealership"
+                  name="dealership"
+                  required
+                  placeholder="Dealership"
+                />
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label" for="comments">Comments</label>
+                <textarea
+                  id="comments"
+                  class="form-field"
+                  name="comments"
+                  placeholder="Enter your comments here"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-footer">
+              <button type="submit" class="form-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="demo-iframe-modal" class="modal">
+      <div
+        class="modal-overlay"
+        onclick="closeDemoModal('demo-iframe-modal')"
+      ></div>
+      <button
+        class="close-button"
+        aria-label="close modal"
+        onclick="closeDemoModal('demo-iframe-modal')"
+      >
+        <svg
+          fill="none"
+          height="28"
+          width="28"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m5 5 14 14m-14 0 14-14"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
       </button>
 
       <div class="modal-content">

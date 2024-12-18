@@ -15,11 +15,17 @@
   --primary-background: #ffffff;
   --secondary-background: #f7f7f7;
   --dark-background: #000000;
+  --modal-background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(69, 69, 69) 50%
+  );
 
   --primary-text: #000000;
   --secondary-text: #58595b;
   --contrast-text: #ffffff;
 
+  --color-gray-light: #ebebeb;
   --color-gray: #afafaf;
 
   --hover-color: #d50000;
@@ -221,7 +227,7 @@ header {
     transition: all 0.3s ease-in-out;
     border-bottom: 1px solid var(--border-color);
 
-    @include breakpoint-max(md) {
+    @include breakpoint-max(lg) {
       .nav-wrapper {
         position: absolute;
         bottom: 0;
@@ -236,7 +242,7 @@ header {
       font-size: 0.75rem;
       column-gap: 1.5rem;
 
-      @include breakpoint-max(md) {
+      @include breakpoint-max(lg) {
         visibility: hidden;
         position: absolute;
         opacity: 0;
@@ -249,6 +255,7 @@ header {
         background-color: var(--primary-background);
         padding: 1rem 0;
         border-bottom: 1px solid var(--border-color);
+        box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1);
       }
 
       .nav-item {
@@ -258,18 +265,39 @@ header {
         transition: color 0.3s ease-in-out;
         text-decoration: none;
         text-align: center;
+        position: relative;
 
-        @include breakpoint-max(md) {
+        @include breakpoint-max(lg) {
           padding: 1rem 0.5rem;
           width: 100%;
         }
 
-        &:hover {
-          color: var(--primary-color);
-        }
-
         &.active {
           font-weight: 700;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          transition: all 0.3s ease-in-out;
+          background-color: var(--primary-color);
+          transform: translateX(-50%);
+          bottom: 0;
+          
+          @include breakpoint(lg) {
+            bottom: 1.25rem;
+          }
+        }
+
+        &:hover {
+          color: var(--primary-color);
+
+          &::after {
+            width: 100%;
+          }
         }
       }
 
@@ -283,7 +311,7 @@ header {
         padding: 2rem 0.5rem;
         justify-content: center;
 
-        @include breakpoint-max(md) {
+        @include breakpoint-max(lg) {
           padding: 1rem 0.5rem;
           width: 100%;
         }
@@ -315,7 +343,7 @@ header {
     transform: translateY(-100%);
 
     .header-wrapper {
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         border-bottom-color: transparent;
       }
     }
@@ -328,7 +356,7 @@ header {
     justify-content: center;
     position: relative;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       display: none;
     }
 
@@ -486,17 +514,19 @@ header {
     margin-top: 2rem;
     row-gap: 2rem;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       grid-template-columns: repeat(2, 1fr);
     }
 
     &__left {
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         padding-right: 3rem;
       }
 
       img {
         border-radius: 1.5rem;
+        margin: 0 auto;
+        display: block;
       }
     }
 
@@ -680,7 +710,7 @@ header {
       row-gap: 6rem;
     }
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       row-gap: 9rem;
     }
   }
@@ -690,7 +720,7 @@ header {
     display: flex;
     align-items: end;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
 
     .split-image {
       position: relative;
@@ -699,7 +729,7 @@ header {
       background-color: var(--secondary-background);
       width: 100%;
 
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         width: 66.67%;
         flex-shrink: 0;
       }
@@ -712,10 +742,11 @@ header {
           background-repeat: no-repeat;
           background-size: contain;
           aspect-ratio: 16/9;
-          width: 70%;
 
-          img {
-            width: 50%;
+          img,
+          video {
+            max-width: 65%;
+            height: 65%;
             position: relative;
             top: 28%;
             left: 19%;
@@ -724,46 +755,65 @@ header {
       }
 
       &.message {
+        @include breakpoint-max(lg) {
+          margin-top: 8rem;
+        }
+
         .split-image__wrapper {
           background-image: url("/assets/images/channel-message-bg.png");
           background-repeat: no-repeat;
           background-position-x: center;
           background-repeat: no-repeat;
           background-size: contain;
-          margin: -50px 0 -30px;
+          margin: -150px 0 -50px;
+          position: relative;
 
-          @include breakpoint(md) {
-            margin: -150px 0 -50px;
+          video {
+            position: relative;
+            z-index: -1;
+            left: 50%;
+            transform: translateX(-50%);
+            max-height: 460px;
+            border-radius: 2rem;
+            padding: 0.75rem 0.5rem 1rem;
+            height: 100%;
+            display: block;
+          }
+
+          .message-floating {
+            position: absolute;
+            top: 0;
+            left: 2rem;
           }
         }
       }
 
       &.social {
-        @include breakpoint(md) {
-          height: 300px;
-        }
+        height: 300px;
+        margin-top: 8rem;
+        padding: 0;
 
         .split-image__wrapper {
-          padding: 101px 0 87px;
+          height: 400px;
           background-image: url("/assets/images/channel-social-bg.png");
           background-position-x: center;
           background-repeat: no-repeat;
           background-size: contain;
+          margin: 0 auto;
+          margin-top: -100px;
 
-          @include breakpoint(md) {
-            position: absolute;
+          img,
+          video {
             bottom: 0;
-            width: 100%;
-          }
-
-          img {
             left: 50%;
             transform: translateX(-50%);
             position: relative;
-
-            @include breakpoint(md) {
-              width: 30%;
-            }
+            aspect-ratio: 1;
+            object-fit: cover;
+            width: 30%;
+            top: 25%;
+            z-index: -1;
+            width: 208px;
           }
         }
       }
@@ -772,7 +822,7 @@ header {
     .split-text {
       width: 100%;
 
-      @include breakpoint(md) {
+      @include breakpoint(lg) {
         padding-right: 4rem;
       }
 
@@ -780,7 +830,7 @@ header {
         margin-bottom: 1.5rem;
         font-size: 1.5rem;
 
-        @include breakpoint(md) {
+        @include breakpoint(lg) {
           margin-bottom: 2.5rem;
         }
       }
@@ -804,7 +854,7 @@ header {
       }
     }
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       flex-direction: row;
 
       &:nth-child(even) {
@@ -1360,7 +1410,7 @@ header {
     display: grid;
     row-gap: 2rem;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       grid-template-columns: repeat(12, 1fr);
       padding: 4rem;
     }
@@ -1676,7 +1726,7 @@ header {
   }
 }
 
-#demo-modal {
+.modal {
   position: fixed;
   z-index: 10;
   left: 0;
@@ -1688,7 +1738,7 @@ header {
 
   .modal-content {
     position: fixed;
-    background-color: var(--primary-background);
+    background: var(--modal-background);
     margin: auto;
     max-width: 100%;
     width: 100%;
@@ -1700,10 +1750,131 @@ header {
     transform: translateY(calc(-50% - 3rem)) translateX(-50%);
     overflow: auto;
     opacity: 0;
+    box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, 0.2);
 
     @include breakpoint(md) {
       max-width: 600px;
-      max-height: 80%;
+      height: auto;
+      max-height: 90%;
+    }
+
+    .book-demo-form {
+      padding: 2rem 1rem 1rem;
+      font-family: var(--secondary-font);
+    }
+
+    .form-header {
+      text-align: center;
+      color: var(--contrast-text);
+      margin-bottom: 2rem;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        max-width: 420px;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+        line-height: 1.5;
+      }
+    }
+
+    .form-body {
+      background-color: var(--color-gray-light);
+      padding: 1rem;
+
+      @include breakpoint(md) {
+        padding: 2rem;
+      }
+
+      .form-heading {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .form-elements {
+        display: grid;
+        gap: 1rem;
+
+        @include breakpoint(md) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(md) {
+          &.full-width {
+            grid-column: span 2;
+          }
+        }
+      }
+
+      .form-label {
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+
+        @include breakpoint(md) {
+          font-size: 1.5rem;
+        }
+
+        .required {
+          color: var(--primary-color);
+        }
+      }
+
+      .form-field {
+        background-color: var(--primary-background);
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        font-family: var(--secondary-font);
+        font-size: 1rem;
+
+        &:hover,
+        &:focus {
+          border-color: var(--primary-color);
+        }
+
+        &::placeholder {
+          color: var(--color-gray);
+        }
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+    }
+
+    .form-footer {
+      margin-top: 2rem;
+
+      .form-submit {
+        background-color: var(--primary-color);
+        color: var(--contrast-text);
+        border: none;
+        padding: 1rem 4rem;
+        font-size: 1.125rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        font-weight: 700;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint(md) {
+          font-size: 1.25rem;
+        }
+
+        &:hover {
+          background-color: var(--hover-color);
+        }
+      }
     }
   }
 
@@ -1720,17 +1891,25 @@ header {
   }
 
   .close-button {
-    color: var(--secondary-text);
+    color: var(--color-gray);
     font-size: 2.5rem;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 0.75rem;
+    right: 0.75rem;
     border: none;
-    font-weight: 300;
+    width: 2.5rem;
+    height: 2.5rem;
     outline: none;
     z-index: 11;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(md) {
+      color: var(--secondary-color);
+    }
 
     &:hover,
     &:focus {
