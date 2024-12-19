@@ -433,10 +433,62 @@ header .hamburger-input:checked ~ .nav-wrapper nav {
     margin-top: 4rem;
   }
 }
-#hero .hero-video img {
-  margin: 0 auto;
+#hero .hero-video__wrapper {
+  position: relative;
   display: block;
+  max-width: 800px;
   border-radius: 1.5rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#hero .hero-video__player {
+  padding-top: 56.25%;
+}
+#hero .hero-video__player iframe,
+#hero .hero-video__player video {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+#hero .hero-video__player iframe.show,
+#hero .hero-video__player video.show {
+  visibility: visible;
+}
+#hero .hero-video__player iframe.show ~ button,
+#hero .hero-video__player video.show ~ button {
+  display: none;
+}
+#hero .hero-video__player-button {
+  background: url("/assets/images/hero-video.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#hero .hero-video__player-button svg {
+  color: var(--primary-color);
+  width: 5rem;
+  height: 5rem;
+  transition: transform 0.3s ease-in-out;
+}
+#hero .hero-video__player-button:hover svg {
+  color: var(--hover-color);
+  transform: scale(1.05);
 }
 
 #features {
@@ -1673,6 +1725,7 @@ header .hamburger-input:checked ~ .nav-wrapper nav {
   transition: all 0.3s ease-in-out;
   font-family: var(--secondary-font);
   font-size: 1rem;
+  outline: none;
 }
 .modal .modal-content .form-body .form-field:hover, .modal .modal-content .form-body .form-field:focus {
   border-color: var(--primary-color);

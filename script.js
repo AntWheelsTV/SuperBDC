@@ -38,14 +38,13 @@ window.addEventListener("load", () => {
 
 function openDemoModal(e) {
   e.preventDefault();
-  // const name = e.target.dataset.modal;
-  // document.getElementById(name).classList.add("show");
-  // document.body.style.overflow = "hidden";
-  window.open("https://www.wheelstv.net/book-a-demo/", "_blank");
+  document.getElementById("demo-modal")?.classList.add("show");
+  document.body.style.overflow = "hidden";
+  // window.open("https://www.wheelstv.net/book-a-demo/", "_blank");
 }
 
-function closeDemoModal(name) {
-  document.getElementById(name).classList.remove("show");
+function closeDemoModal() {
+  document.getElementById("demo-modal")?.classList.remove("show");
   document.body.style.overflow = "auto";
 }
 
@@ -58,8 +57,15 @@ function addToggle(name, event = "click") {
 
       if (item !== current) {
         item.classList.add("active");
-        current.classList.remove("active");
+        current?.classList.remove("active");
       }
     });
   });
+}
+
+function playHeroVideo() {
+  const video = document.querySelector("#hero-video");
+  if (!video) return;
+  video.classList.add("show");
+  video.play();
 }

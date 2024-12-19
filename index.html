@@ -92,33 +92,44 @@
             </div>
           </div>
           <div class="hero-video" data-aos="zoom-in">
-            <div
-              style="
-                position: relative;
-                display: block;
-                max-width: 960px;
-                border-radius: 1.5rem;
-                overflow: hidden;
-                margin: 0 auto;
-              "
-            >
-              <div style="padding-top: 56.25%">
-                <iframe
+            <div class="hero-video__wrapper">
+              <div class="hero-video__player">
+                <video
+                  src="/assets/videos/Video-Test-Drive-Facebook.mp4"
+                  controls
+                  autoplay
+                  playsinline
+                  id="hero-video"
+                ></video>
+                <!-- <iframe
                   src="https://players.brightcove.net/607012070001/0tyDZuxe5E_default/index.html?videoId=6362265537112"
                   allowfullscreen=""
                   frameborder="0"
                   title=""
                   allow="encrypted-media"
-                  style="
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                    bottom: 0px;
-                    left: 0px;
-                    width: 100%;
-                    height: 100%;
-                  "
-                ></iframe>
+                ></iframe> -->
+                <button
+                  class="hero-video__player-button"
+                  aria-label="play video"
+                  onclick="playHeroVideo()"
+                >
+                  <svg
+                    width="70"
+                    height="70"
+                    viewBox="0 0 70 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M70 35C70 54.33 54.33 70 35 70C15.67 70 0 54.33 0 35C0 15.67 15.67 0 35 0C54.33 0 70 15.67 70 35Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M51 33.7679C52.3333 34.5377 52.3333 36.4622 51 37.232L26.25 51.5214C24.9167 52.2912 23.25 51.3289 23.25 49.7893V21.2105C23.25 19.6709 24.9167 18.7087 26.25 19.4785L51 33.7679Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -1287,15 +1298,15 @@
           </div>
 
           <div>
-            <!-- <h3 class="footer-heading">Social Media</h3>
+            <h3 class="footer-heading">Social Media</h3>
             <ul class="footer-navigation">
               <li><a class="footer-link" href="#">Facebook</a></li>
               <li><a class="footer-link" href="#">LinkedIn</a></li>
-            </ul> -->
+            </ul>
           </div>
 
           <div class="footer-newsletter">
-            <!-- <h3 class="footer-heading">Subscribe to Our Newsletter</h3>
+            <h3 class="footer-heading">Subscribe to Our Newsletter</h3>
             <p class="footer-newsletter-paragraph">
               Let’s Keep in Touch. Enter your email, and we’ll reach out from
               time to time with helpful tidbits on how to unlock the full value
@@ -1304,15 +1315,15 @@
             <form class="footer-newsletter-form">
               <input type="email" placeholder="Enter your email" />
               <button type="submit">SUBSCRIBE</button>
-            </form> -->
+            </form>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <!-- <div class="footer-legal">
+          <div class="footer-legal">
             <a href="#">Terms & Conditions</a>
             <a href="#">Privacy Policy</a>
-          </div> -->
+          </div>
           <p class="footer-copyright">© 2024 SuperBDC</p>
         </div>
       </div>
@@ -1320,11 +1331,11 @@
 
     <!-- The Modal -->
     <div id="demo-modal" class="modal">
-      <div class="modal-overlay" onclick="closeDemoModal('demo-modal')"></div>
+      <div class="modal-overlay" onclick="closeDemoModal()"></div>
       <button
         class="close-button"
         aria-label="close modal"
-        onclick="closeDemoModal('demo-modal')"
+        onclick="closeDemoModal()"
       >
         <svg
           fill="none"
