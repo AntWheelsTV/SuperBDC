@@ -37,10 +37,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.vjs-big-play-button {
-  background-color: var(--primary-color) !important;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -72,10 +68,6 @@ $breakpoints: (
 
 img {
   max-width: 100%;
-}
-
-section {
-  scroll-margin-top: 4rem;
 }
 
 main {
@@ -363,7 +355,6 @@ header {
     span {
       display: block;
       position: relative;
-      width: 100%;
       height: 2px;
       width: 1.5rem;
       background-color: #616161;
@@ -516,7 +507,7 @@ header {
       }
 
       &-button {
-        background: url("/assets/images/hero-video.png");
+        background: url("../../assets/images/hero-video.png");
         background-repeat: no-repeat;
         background-size: contain;
         cursor: pointer;
@@ -552,6 +543,7 @@ header {
   background-color: var(--secondary-background);
   padding: 4.5rem 0;
   position: relative;
+  scroll-margin-top: 4rem;
 
   .section-headline {
     max-width: 48em;
@@ -793,10 +785,9 @@ header {
 
       &.mail {
         .split-image__wrapper {
-          background-image: url("/assets/images/channel-mail-bg.png");
+          background-image: url("../../assets/images/channel-mail-bg.png");
           background-repeat: no-repeat;
           background-position: center;
-          background-repeat: no-repeat;
           background-size: contain;
           aspect-ratio: 16/9;
 
@@ -817,8 +808,7 @@ header {
         }
 
         .split-image__wrapper {
-          background-image: url("/assets/images/channel-message-bg.png");
-          background-repeat: no-repeat;
+          background-image: url("../../assets/images/channel-message-bg.png");
           background-position-x: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -852,7 +842,7 @@ header {
 
         .split-image__wrapper {
           height: 400px;
-          background-image: url("/assets/images/channel-social-bg.png");
+          background-image: url("../../assets/images/channel-social-bg.png");
           background-position-x: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -867,7 +857,6 @@ header {
             position: relative;
             aspect-ratio: 1;
             object-fit: cover;
-            width: 30%;
             top: 25%;
             z-index: -1;
             width: 208px;
@@ -1212,7 +1201,6 @@ header {
               transform: scale(0) translateX(-50%);
               transform-origin: left center;
               left: 50%;
-              bottom: 36%;
               opacity: 0;
               pointer-events: none;
               bottom: 44%;
@@ -1458,6 +1446,7 @@ header {
 
 #pricing {
   margin-top: 8rem;
+  scroll-margin-top: 8rem;
 
   .pricing-card {
     background-color: var(--primary-color);
@@ -1533,7 +1522,7 @@ header {
             left: -1.5rem;
             top: 0.125rem;
             position: absolute;
-            content: url("/assets/icons/check-circle.svg");
+            content: url("../../assets/icons/check-circle.svg");
           }
         }
 
@@ -1557,6 +1546,7 @@ header {
 }
 
 #faqs {
+  scroll-margin-top: 6rem;
   margin-top: 8rem;
 
   .section-headline {
